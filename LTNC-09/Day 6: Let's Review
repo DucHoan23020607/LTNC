@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    for(int i = 0; i < t; i++) {
+        string s;
+        cin >> s;
+
+        string evenChars = "";
+        string oddChars = "";
+
+        for(int j = 0; j < s.size(); j++) {
+            if(j % 2 == 0) {
+                evenChars += s[j];
+            } else {
+                oddChars += s[j];
+            }
+        }
+
+        cout << evenChars << " " << oddChars << endl;
+    }
+
+    return 0;
+}
